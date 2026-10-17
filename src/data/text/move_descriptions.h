@@ -499,7 +499,7 @@ static const u8 sSludgeDescription[] = _(
 
 static const u8 sBoneClubDescription[] = _(
     "Clubs the foe with a bone.\n"
-    "May cause flinching.");
+    "May lower defense.");
 
 static const u8 sFireBlastDescription[] = _(
     "Incinerates everything it\n"
