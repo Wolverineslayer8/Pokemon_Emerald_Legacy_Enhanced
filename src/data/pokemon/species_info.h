@@ -10828,11 +10828,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_AGGRON] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 120,
+        .baseHP        = 90,
+        .baseAttack    = 110,
         .baseDefense   = 180,
         .baseSpeed     = 30,
-        .baseSpAttack  = 60,
+        .baseSpAttack  = 80,
         .baseSpDefense = 60,
         .types = { TYPE_STEEL, TYPE_ROCK },
         .catchRate = 45,
