@@ -1812,6 +1812,14 @@ static u16 GetRematchTrainerIdFromTable(const struct RematchTrainer *table, u16 
     trainerEntry = &table[tableId];
     for (i = 1; i < REMATCHES_COUNT; i++)
     {
+        if (FlagGet(FLAG_IS_CHAMPION))
+            return trainerEntry->trainerIds[4];
+        if (FlagGet(FLAG_BADGE07_GET))
+            return trainerEntry->trainerIds[3];
+        if (FlagGet(FLAG_BADGE06_GET))
+            return trainerEntry->trainerIds[2];
+        if (FlagGet(FLAG_BADGE05_GET))
+            return trainerEntry->trainerIds[1];
         if (trainerEntry->trainerIds[i] == 0) // previous entry was this trainer's last one
             return trainerEntry->trainerIds[i - 1];
         if (!HasTrainerBeenFought(trainerEntry->trainerIds[i]))
