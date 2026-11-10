@@ -157,7 +157,10 @@ SouthernIsland_Interior_EventScript_Exclsior::
 
 SouthernIsland_Interior_EventScript_Exclsior_NoBattle::
 	msgbox SouthernIsland_Interior_Text_Exclsior_MaybeAnotherTime, MSGBOX_DEFAULT
-	turnobject LOCALID_EXCLSIOR, DIR_NORTH
+	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject LOCALID_EXCLSIOR
+	removeobject LOCALID_TYPHLOSION
+	fadescreenswapbuffers FADE_FROM_BLACK
 	release
 	end
 
